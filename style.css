@@ -59,6 +59,8 @@ ul {
     align-items: center;
     justify-content: center;
     list-style: none;
+
+    gap: 15px;
 }
 
 ul li a{
@@ -92,4 +94,14 @@ ul li a.active{
     place-items: center;
     color: #fff;
     padding: 0 5px;
+}
+
+
+@media screen and (max-width:450px) {
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
 }
